@@ -1,9 +1,10 @@
-﻿  LogicWise.cpp
+﻿  LogicalOperation.cpp
 E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\TrueTable.h(16,1): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
 E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\CyclicCode.h(71,20): warning C4018: “<”: 有符号/无符号不匹配
+E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\LogicalOperation.cpp(27,29): warning C4018: “<”: 有符号/无符号不匹配
   正在生成代码
-  1 of 316 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  2 of 316 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    6 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   LogicWise.vcxproj -> E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\Release\LogicWise.exe

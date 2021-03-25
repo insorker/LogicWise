@@ -155,7 +155,7 @@ void LogicalOperation::infixToPostfix(const string& oldExp) {
 		else if (charType == CharType::NOT) {
 			stack<char> copy = s_oldExp;
 			while (!copy.empty() && copy.top() == CharType::NOT) copy.pop();
-			if (!copy.empty() && getCharType(copy.top()) == CharType::VARIABLE) {
+			if (!copy.empty() && (getCharType(copy.top()) == CharType::VARIABLE || getCharType(copy.top()) == CharType::R_BRACKET)) {
 				stackTransfer('*', s_oper, s_newExp, false);
 			}
 			s_oper.push(*it);
