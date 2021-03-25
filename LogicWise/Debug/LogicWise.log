@@ -1,0 +1,10 @@
+﻿  LogicWise.cpp
+E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\TrueTable.h(16,1): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\CyclicCode.h(71,20): warning C4018: “<”: 有符号/无符号不匹配
+  LogicalOperation.cpp
+E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\TrueTable.h(16,1): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\CyclicCode.h(71,20): warning C4018: “<”: 有符号/无符号不匹配
+E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\LogicalOperation.cpp(27,29): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\LogicWise\LogicalOperation.cpp(190): warning C4715: “LogicalOperation::getVariableValue”: 不是所有的控件路径都返回值
+  LogicWise.vcxproj -> E:\VS2017_WorkSpace\_practise\LogicWise\LogicWise\Debug\LogicWise.exe
