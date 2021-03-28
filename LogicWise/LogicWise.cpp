@@ -1,27 +1,52 @@
-﻿#include "LogicalOperation.h"
-#include "CyclicCode.h"
-using std::cin;
-using std::getline;
+﻿#if 1
+#define TEST_TTB_IO 0
+#define TEST_TTB_CC 0
+#define TEST_LD		1
+#endif
 
-#if 0
-void test1() {
-	CyclicCode cc(4);
-	while (cc.next()) {
-		for (int i = 0; i < 4; i++)
-			cout << cc[i] << ' ';
-		cout << '\n';
+#if TEST_TTB_IO
+#include "TrueTable/TTB_InOrder.h"
+#include <iostream>
+using namespace std;
+void test_ttb_inorder() {
+	unsigned int size = 3;
+	TTB_InOrder ttb_io(size);
+	while (ttb_io.next()) {
+		for (unsigned int i = 0; i < size; ++i) {
+			cout << ttb_io[i] << ' ';
+		}
+		cout << endl;
 	}
 }
 #endif
 
-int main()
-{
+#if TEST_TTB_CC
+#include "TrueTable/TTB_CyclicCode.h"
+#include <iostream>
+using namespace std;
+void test_ttb_cc() {
+	unsigned int size = 3;
+	TTB_CyclicCode ttb_io(size);
+	while (ttb_io.next()) {
+		for (unsigned int i = 0; i < size; ++i) {
+			cout << ttb_io[i] << ' ';
+		}
+		cout << endl;
+	}
+}
+#endif
+
+#if TEST_LD
+#include "LogicalWise/LogicalDraw.h"
+using std::cin;
+
+void test_LD() {
 	unsigned int size;
 	string exp;
 	char c1 = 'y';
 	char c2 = 'n';
-	cout << "Welcome To LogicWise~~ Have a good time~~" << '\n';
-	cout << "-----------------------------------------" << '\n';
+	cout << "Welcome To LogicWise~~ Have a good time~~" << endl;
+	cout << "-----------------------------------------" << endl;
 	while (c1 == 'y') {
 		cout << "请输入变量个数：" << '\n';
 		cin >> size;
@@ -34,14 +59,14 @@ int main()
 		} while (c2 != 'y' && c2 != 'n');
 
 		if (c2 == 'y') {
-			LogicalOperation lo(size, exp, LogicalOperation::KARNO);
-			lo.showTrueTable();
-			lo.showPostfixExpression();
+			LogicalDraw ld(size, exp, LogicalParser::KARNO);
+			ld.showTrueTable();
+			ld.showPostfixExpression();
 		}
 		else if (c2 == 'n') {
-			LogicalOperation lo(size, exp);
-			lo.showTrueTable();
-			lo.showPostfixExpression();
+			LogicalDraw ld(size, exp);
+			ld.showTrueTable();
+			ld.showPostfixExpression();
 		}
 
 		cout << '\n';
@@ -51,6 +76,11 @@ int main()
 		} while (c1 != 'y' && c1 != 'n');
 		cout << "-----------------------------------------" << '\n';
 	}
+}
+#endif
 
+int main()
+{
+	test_LD();
 	return 0;
 }

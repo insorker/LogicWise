@@ -139,14 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LogicalOperation.cpp" />
+    <ClCompile Include="LogicalWise\LogicalDraw.cpp" />
+    <ClCompile Include="LogicalWise\LogicalParser.cpp" />
     <ClCompile Include="LogicWise.cpp" />
-    <ClCompile Include="TrueTable.cpp" />
+    <ClCompile Include="TrueTable\TTB_CyclicCode.cpp" />
+    <ClCompile Include="TrueTable\TTB_InOrder.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CyclicCode.h" />
-    <ClInclude Include="LogicalOperation.h" />
-    <ClInclude Include="TrueTable.h" />
+    <ClInclude Include="LogicalWise\LogicalDraw.h" />
+    <ClInclude Include="LogicalWise\LogicalParser.h" />
+    <ClInclude Include="TrueTable\TrueTableBase.h" />
+    <ClInclude Include="TrueTable\TTB_CyclicCode.h" />
+    <ClInclude Include="TrueTable\TTB_InOrder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

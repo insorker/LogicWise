@@ -13,27 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\TrueTable">
+      <UniqueIdentifier>{7797d579-5602-449d-93f5-537b93f95460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\TrueTable">
+      <UniqueIdentifier>{cc14bbd0-e757-42d6-b049-d7c7e13faa82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\LogicalWise">
+      <UniqueIdentifier>{16ac53ab-b675-4a07-b5ae-c84d08db94d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\LogicalWise">
+      <UniqueIdentifier>{c6c485fd-0de8-40cc-a989-ad1994297a2e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LogicWise.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TrueTable.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="TrueTable\TTB_CyclicCode.cpp">
+      <Filter>源文件\TrueTable</Filter>
     </ClCompile>
-    <ClCompile Include="LogicalOperation.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="TrueTable\TTB_InOrder.cpp">
+      <Filter>源文件\TrueTable</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicalWise\LogicalDraw.cpp">
+      <Filter>源文件\LogicalWise</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicalWise\LogicalParser.cpp">
+      <Filter>源文件\LogicalWise</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TrueTable.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="TrueTable\TrueTableBase.h">
+      <Filter>头文件\TrueTable</Filter>
     </ClInclude>
-    <ClInclude Include="LogicalOperation.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="TrueTable\TTB_CyclicCode.h">
+      <Filter>头文件\TrueTable</Filter>
     </ClInclude>
-    <ClInclude Include="CyclicCode.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="TrueTable\TTB_InOrder.h">
+      <Filter>头文件\TrueTable</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicalWise\LogicalDraw.h">
+      <Filter>头文件\LogicalWise</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicalWise\LogicalParser.h">
+      <Filter>头文件\LogicalWise</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

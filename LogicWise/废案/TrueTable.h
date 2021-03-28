@@ -13,7 +13,7 @@ public:
 		if (i >= _length)
 			return -1;
 		else
-			return (_value >> _length - i - 1) & 1;
+			return (_value >> (_length - i - 1)) & 1;
 	}
 private:
 	unsigned int _length;
